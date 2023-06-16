@@ -1,0 +1,74 @@
+<header class="main-header">
+    <h1 class="main-header__title">
+        <span class="main-header__title--blue">Proway</span><span class="main-header__title--orange">Computers</span>
+    </h1>
+    <div class="container-menu">
+    <nav class="main-header__menu">
+        <ul>
+            <!--Vamos usar EMET que nada mais é que uma abreviação para escrever codigo-->
+            <!-- (li>a)*5 -->
+            <li>
+                <a href="">
+                    Produtos
+                </a>
+            </li> 
+
+            <li>
+                <a href="carrinho">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Carrinho
+                    <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="contato">
+                    Contato
+                </a>
+            </li>
+            <!--Agora vamos adicionar os icones das nossas redes sociais, no caso vamos ultilizar
+                as fontes do site https://fontawesome.com/ -->
+            <li>
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!--    
+    <form class="search-form">
+        <input type="text" name="descricao">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+    ATE AQUI ESSE FORM FOI USADO, MAS QUANDO NA PAGINA DE CONTATO DENTRO DO CAMPO DE BUSCA ESCOLHEMOS 
+    O QUALQUER PRODUTO ELE NÃO BUSCA O PRODUTO, FICA NA MESMA PAGINA PARA RESOLVER ESSE PROBLEMA VAMOS
+    CRIAR UM NOVO COMPONENTE.
+
+    e vamos colar no novo componente no caso "barra-pesquisa"
+    -->
+
+    <app-barra-pesquisa></app-barra-pesquisa>
+
+    </div>
+</header>
